@@ -1,3 +1,16 @@
+
+@keyframes highlight {
+    0% {
+        transform: translateZ(0) translateX(0) translateY(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(50px) translateX(12px) translateY(-12px);
+        box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+}
+
+
 .font-basic{
     font-family: 'Open Sans', sans-serif;
 }
@@ -10,13 +23,18 @@
 
 .card{
     width: 1fr;
-    box-shadow: 0 0 5px 0 #c4c4c4;
     padding: 20px;
     margin: 10px;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+    -webkit-transition: transform, box-shadow 0.5s;
+    transition: 0.5s transform, box-shadow ease-out;
 }
 
-.card:hover{
-    background: #f7f7f7;
+.card-anim:hover{
+    transform: translateZ(10px) translateX(6px) translateY(-6px);
+    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+
 }
 
 .col{
