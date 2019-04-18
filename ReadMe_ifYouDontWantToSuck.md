@@ -44,7 +44,7 @@ Cards are basically anything you want them to be, but they are intended as an ea
 >*box-shadow: -3px 3px 7px -3px rgba(0, 0, 0, 0.25);<br>
 
 >\#nav <br>
->ONLY USE IN COMBINATION WITH \#nav-body<br>
+>**ONLY USE IN COMBINATION WITH \#nav-body**<br>
 >use \#nav on the item you want to have as a nav-bar <br>
 >then use \#nav-body on all other content (wrapper with content in it)
 
